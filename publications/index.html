@@ -7,9 +7,6 @@
   <title>Publications of Jiří Hladůvka</title>
   <style>
     html {
-      line-height: 1.5;
-      font-family: Georgia, serif;
-      font-size: 20px;
       color: #1a1a1a;
       background-color: #fdfdfd;
     }
@@ -28,13 +25,16 @@
     @media (max-width: 600px) {
       body {
         font-size: 0.9em;
-        padding: 1em;
+        padding: 12px;
       }
       h1 {
         font-size: 1.8em;
       }
     }
     @media print {
+      html {
+        background-color: white;
+      }
       body {
         background-color: transparent;
         color: black;
@@ -58,6 +58,10 @@
       color: #1a1a1a;
     }
     img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
       max-width: 100%;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -84,9 +88,10 @@
       color: #606060;
     }
     code {
-      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
+      hyphens: manual;
     }
     pre {
       margin: 1em 0;
@@ -102,8 +107,8 @@
      overflow: visible;
     }
     hr {
-      background-color: #1a1a1a;
       border: none;
+      border-top: 1px solid #1a1a1a;
       height: 1px;
       margin: 1em 0;
     }
@@ -151,22 +156,22 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <header id="title-block-header">
 <h1 class="title">Publications of Jiří Hladůvka</h1>
-<p class="date">updated on April 10, 2024</p>
+<p class="date">updated on May 7, 2026</p>
 </header>
 <!-- title and date will be produced by pandoc -->
 <h2 id="articles-in-journals">Articles in Journals</h2>
@@ -176,132 +181,128 @@ Jakaite, V. Schetinin, J. Hladůvka, S. Minaev, A. Ambia, and W.
 Krzanowski. Deep learning for early detection of pathological changes in
 <span>X</span>-ray bone microstructures: Case of osteoarthritis,
 <em>Scientific Reports</em>, vol. 11, no. 2294, 2021, DOI:<a
-href="https://doi.org/10.1038/s41598-021-81786-4"
-role="doc-biblioref">10.1038/s41598-021-81786-4</a>.</span></p>
+href="https://doi.org/10.1038/s41598-021-81786-4">10.1038/s41598-021-81786-4</a>.</span></p>
 <!-- at VRVis -->
 <p><span class="citation" data-cites="Novikov-2018-ChestSeg">A. A.
 Novikov, D. Major, D. Lenis, J. Hladůvka, M. Wimmer, and K. Bühler.
 Fully convolutional architectures for multi-class segmentation in chest
 radiographs, <em>IEEE Transactions on Medical Imaging</em>, vol. 37, no.
 8, pp. 1865–1876, 2018, DOI:<a
-href="https://doi.org/10.1109/TMI.2018.2806086"
-role="doc-biblioref">10.1109/TMI.2018.2806086</a>.</span></p>
+href="https://doi.org/10.1109/TMI.2018.2806086">10.1109/TMI.2018.2806086</a>.</span></p>
 <p><span class="citation" data-cites="PB-VRVis-2013-012">D. Major, J.
 Hladůvka, F. Schulze, and K. Bühler. Automated landmarking and labeling
 of fully and partially scanned spinal columns in <span>CT</span> images,
 <em>Medical Image Analysis</em>, vol. 17, no. 8, pp. 1151–1163, 2013,
-DOI:<a href="https://doi.org/10.1016/J.MEDIA.2013.07.005"
-role="doc-biblioref">10.1016/J.MEDIA.2013.07.005</a>.</span></p>
+DOI:<a
+href="https://doi.org/10.1016/J.MEDIA.2013.07.005">10.1016/J.MEDIA.2013.07.005</a>.</span></p>
 <p><span class="citation" data-cites="Bruckner-2009-BrainGazer">S.
 Bruckner, V. Šoltészová, E. Gröller, J. Hladůvka, K. Bühler, J. Y. Yu,
 and B. J. Dickson. BrainGazer – visual queries for neurobiology
 research, <em>IEEE Transactions on Visualization and Computer
 Graphics</em>, vol. 15, no. 6, pp. 1497–1504, 2009, DOI:<a
-href="https://doi.org/10.1109/TVCG.2009.121"
-role="doc-biblioref">10.1109/TVCG.2009.121</a>.</span></p>
+href="https://doi.org/10.1109/TVCG.2009.121">10.1109/TVCG.2009.121</a>.</span></p>
 <!-- at ICGA -->
 <p><span class="citation" data-cites="Hladuvka-2002-TVC">J. Hladůvka and
 E. Gröller. Exploiting the <span>H</span>essian matrix for content-based
 retrieval of volume-data features, <em>The Visual Computer</em>, vol.
 18, no. 4, pp. 207–217, 2002, DOI:<a
-href="https://doi.org/10.1007/s003710100141"
-role="doc-biblioref">10.1007/s003710100141</a>.</span></p>
+href="https://doi.org/10.1007/s003710100141">10.1007/s003710100141</a>.</span></p>
 <p><span class="citation" data-cites="Hladuvka-2002-CnG">J. Hladůvka and
 E. Gröller. Smallest 2nd-order derivatives for efficient volume-data
 representation, <em>Computers and Graphics</em>, vol. 26, no. 2, pp.
 229–238, 2002, DOI:<a
-href="https://doi.org/10.1016/S0097-8493(02)00054-7"
-role="doc-biblioref">10.1016/S0097-8493(02)00054-7</a>.</span></p>
+href="https://doi.org/10.1016/S0097-8493(02)00054-7">10.1016/S0097-8493(02)00054-7</a>.</span></p>
 <h2 id="papers-in-refereed-conferences">Papers in Refereed
 Conferences</h2>
+<!-- at DAI -->
+<p><span class="citation" data-cites="Hladuvka-2026-ISBI">J. Hladůvka
+and V. Hodorová. Dihedral-invariant <span>LBP</span> co-occurrence for
+cellular texture analysis, in <em>Proceedings of international symposium
+on biomedical imaging</em>, 2026, pp. 1–5.</span></p>
+<p><span class="citation" data-cites="Richnakova-2025-cellseg">X.
+Richnáková, V. Hodorová, and J. Hladůvka. Brightfield cell segmentation
+without labels or learning, in <em>Information technologies –
+applications and theory</em>, 2025, pp. 228–237.</span></p>
 <!-- at PRIP -->
 <p><span class="citation" data-cites="Hladuvka-2024-DGMM">J. Hladůvka
 and W. G. Kropatsch. Fitting egg-shapes to discretized object
 boundaries, in <em>Discrete geometry and mathematical morphology</em>,
 2024, pp. 107–119, DOI:<a
-href="https://doi.org/10.1007/978-3-031-57793-2_9"
-role="doc-biblioref">10.1007/978-3-031-57793-2_9</a>.</span></p>
+href="https://doi.org/10.1007/978-3-031-57793-2_9">10.1007/978-3-031-57793-2_9</a>.</span></p>
 <p><span class="citation" data-cites="Banaeyan-2022-SSPR">M. Banaeyan,
 C. Carratù, W. G. Kropatsch, and J. Hladůvka. Fast distance transforms
 in graphs and in <span>G</span>maps, in <em>IAPR joint international
 workshops on statistical techniques in pattern recognition (SPR 2022)
 and structural and syntactic pattern recognition (SSPR 2022)</em>, 2022,
-pp. 193–202, DOI:<a href="https://doi.org/10.1007/978-3-031-23028-8_20"
-role="doc-biblioref">10.1007/978-3-031-23028-8_20</a>.</span></p>
+pp. 193–202, DOI:<a
+href="https://doi.org/10.1007/978-3-031-23028-8_20">10.1007/978-3-031-23028-8_20</a>.</span></p>
 <p><span class="citation" data-cites="2022-OAGM-Banaeyan">M. Banaeyan,
 W. G. Kropatsch, and J. Hladůvka. Redundant 1-cells in multi-labeled
 <span>2-Gmap</span> irregular pyramids, in <em>OAGM workshop:
 Digitalization for smart farming and forestry</em>, 2022, pp. 5–11,
-DOI:<a href="https://doi.org/10.3217/978-3-85125-954-4-01"
-role="doc-biblioref">10.3217/978-3-85125-954-4-01</a>.</span></p>
+DOI:<a
+href="https://doi.org/10.3217/978-3-85125-954-4-01">10.3217/978-3-85125-954-4-01</a>.</span></p>
 <p><span class="citation" data-cites="2022-OAGM-Sauzeau">Y. Sauzeau, W.
 Kropatsch, and J. Hladůvka. Modeling the diffusion of <span
 class="math inline"><em>C</em><em>O</em><sub>2</sub></span> inside
 leaves, in <em>OAGM workshop: Digitalization for smart farming and
 forestry</em>, 2022, pp. 70–72, DOI:<a
-href="https://doi.org/10.3217/978-3-85125-954-4-11"
-role="doc-biblioref">10.3217/978-3-85125-954-4-11</a>.</span></p>
+href="https://doi.org/10.3217/978-3-85125-954-4-11">10.3217/978-3-85125-954-4-11</a>.</span></p>
 <p><span class="citation" data-cites="2022-OAGM-Palmrich">A. Palmrich,
 K. Voggeneder, D. Tholen, G. Theroux-Rancourt, J. Hladůvka, and W.
 Kropatsch. An unsupervised, shape-based <span>3D</span> cell instance
 segmentation method for plant tissues, in <em>OAGM workshop:
 Digitalization for smart farming and forestry</em>, 2022, pp. 54–59,
-DOI:<a href="https://doi.org/10.3217/978-3-85125-954-4-08"
-role="doc-biblioref">10.3217/978-3-85125-954-4-08</a>.</span></p>
+DOI:<a
+href="https://doi.org/10.3217/978-3-85125-954-4-08">10.3217/978-3-85125-954-4-08</a>.</span></p>
 <p><span class="citation" data-cites="2022-OAGM-Grexova">R. Grexová, K.
 Voggeneder, D. Tholen, G. Theroux-Rancourt, W. Kropatsch, and J.
 Hladůvka. Towards uncertainty detection in automated leaf tissue
 segmentation, in <em>OAGM workshop: Digitalization for smart farming and
 forestry</em>, 2022, pp. 47–53, DOI:<a
-href="https://doi.org/10.3217/978-3-85125-954-4-07"
-role="doc-biblioref">10.3217/978-3-85125-954-4-07</a>.</span></p>
+href="https://doi.org/10.3217/978-3-85125-954-4-07">10.3217/978-3-85125-954-4-07</a>.</span></p>
 <p><span class="citation" data-cites="Bogner-2022-DGMM">F. Bogner, J.
 Hladůvka, and W. G. Kropatsch. Implicit encoding and
 simplification/reduction of <span class="nocase">nGmaps</span>, in
 <em>Discrete geometry and mathematical morphology</em>, 2022, pp.
-110–122, DOI:<a href="https://doi.org/10.1007/978-3-031-19897-7_10"
-role="doc-biblioref">10.1007/978-3-031-19897-7_10</a>.</span></p>
+110–122, DOI:<a
+href="https://doi.org/10.1007/978-3-031-19897-7_10">10.1007/978-3-031-19897-7_10</a>.</span></p>
 <p><span class="citation" data-cites="Renner-2020-ACVRW">V. Renner and
 J. Hladůvka. Towards identification of incorrectly segmented
 <span>OCT</span> scans, in <em>Joint austrian computer vision and
 robotics workshop</em>, 2020, pp. 159–165, DOI:<a
-href="https://doi.org/10.3217/978-3-85125-752-6-36"
-role="doc-biblioref">10.3217/978-3-85125-752-6-36</a>.</span></p>
+href="https://doi.org/10.3217/978-3-85125-752-6-36">10.3217/978-3-85125-752-6-36</a>.</span></p>
 <p><span class="citation" data-cites="Batavia-2019-CAIP">D. Batavia, J.
 Hladůvka, and W. Kropatsch. Partitioning <span>2D</span> images into
 prototypes of slope region, in <em>Computer analysis of images and
 patterns</em>, 2019, pp. 363–374, DOI:<a
-href="https://doi.org/10.1007/978-3-030-29888-3_29"
-role="doc-biblioref">10.1007/978-3-030-29888-3_29</a>.</span></p>
+href="https://doi.org/10.1007/978-3-030-29888-3_29">10.1007/978-3-030-29888-3_29</a>.</span></p>
 <p><span class="citation" data-cites="Kniaz-2018-ThermalGAN">V. V.
 Kniaz, V. A. Knyaz, J. Hladůvka, W. G. Kropatsch, and V. A. Mizginov.
 ThermalGAN: Multimodal color-to-thermal image translation for person
 re-identification in multispectral dataset, in <em>Computer vision –
 ECCV 2018 workshops</em>, 2019, pp. 606–624, DOI:<a
-href="https://doi.org/10.1007/978-3-030-11024-6_46"
-role="doc-biblioref">10.1007/978-3-030-11024-6_46</a>.</span></p>
+href="https://doi.org/10.1007/978-3-030-11024-6_46">10.1007/978-3-030-11024-6_46</a>.</span></p>
 <!-- at VRVIS -->
 <p><span class="citation" data-cites="Hladuvka-2016-ISBI">J. Hladůvka,
 A. Enkhbayar, B. Norman, and R. Ljuhar. Automated <span>ROI</span>
 placement and trabecula-driven orientation for radiographic texture
 analyses of calcaneus, in <em>Proceedings of international symposium on
 biomedical imaging</em>, 2016, pp. 164–167, DOI:<a
-href="https://doi.org/10.1109/ISBI.2016.7493235"
-role="doc-biblioref">10.1109/ISBI.2016.7493235</a>.</span></p>
+href="https://doi.org/10.1109/ISBI.2016.7493235">10.1109/ISBI.2016.7493235</a>.</span></p>
 <p><span class="citation" data-cites="Major-VCBM-2015">D. Major, A. A.
 Novikov, M. Wimmer, J. Hladůvka, and K. Bühler. Automated slice-based
 artery identification in various field-of-view <span>CTA</span> scans,
 in <em>Eurographics workshop on visual computing for biology and
-medicine</em>, 2015, DOI:<a href="https://doi.org/10.2312/VCBM.20151215"
-role="doc-biblioref">10.2312/VCBM.20151215</a>.</span></p>
+medicine</em>, 2015, DOI:<a
+href="https://doi.org/10.2312/VCBM.20151215">10.2312/VCBM.20151215</a>.</span></p>
 <p><span class="citation" data-cites="Hladuvka-2015-BoneProfiles">J.
 Hladůvka, D. Major, and K. Bühler. Bone profiles: Simple, fast, and
 reliable spine localization in <span>CT</span> scans, in <em>Recent
 advances in computational methods and clinical applications for spine
 imaging (lecture notes in computational vision and biomechanics)</em>,
 2015, vol. 20, pp. 173–184, DOI:<a
-href="https://doi.org/10.1007/978-3-319-14148-0_15"
-role="doc-biblioref">10.1007/978-3-319-14148-0_15</a>.</span></p>
+href="https://doi.org/10.1007/978-3-319-14148-0_15">10.1007/978-3-319-14148-0_15</a>.</span></p>
 <p><span class="citation" data-cites="Zambal-2008-Challenge">S. Zambal,
 J. Hladůvka, A. Kanitsar, and K. Bühler. Shape and appearance models for
 automatic coronary artery tracking. MICCAI 2008 Contest: 3D Segmentation
@@ -309,14 +310,13 @@ in Clinic: A Grand Challange, 2008.</span></p>
 <p><span class="citation" data-cites="Zambal-2008-Midas">S. Zambal, J.
 Hladůvka, A. Kanitsar, and K. Bühler. Shape and appearance models for
 automatic coronary artery tracking, <em>The MIDAS Journal</em>, Jul.
-2008, DOI:<a href="https://doi.org/10.54294/l78zbl"
-role="doc-biblioref">10.54294/l78zbl</a>.</span></p>
+2008, DOI:<a
+href="https://doi.org/10.54294/l78zbl">10.54294/l78zbl</a>.</span></p>
 <p><span class="citation" data-cites="Zambal-2008-Entropy">S. Zambal, K.
 Bühler, and J. Hladůvka. Entropy-optimized texture models, in
 <em>Proceedings of medical image computing and computer–assisted
 intervention</em>, 2008, pp. 213–221, DOI:<a
-href="https://doi.org/10.1007/978-3-540-85990-1_26"
-role="doc-biblioref">10.1007/978-3-540-85990-1_26</a>.</span></p>
+href="https://doi.org/10.1007/978-3-540-85990-1_26">10.1007/978-3-540-85990-1_26</a>.</span></p>
 <p><span class="citation" data-cites="Zambal-2008-Localization">S.
 Zambal, A. Schöllhuber, K. Bühler, and J. Hladůvka. Fast and robust
 localization of the heart in cardiac <span>MRI</span> series., in
@@ -331,8 +331,8 @@ assisted radiology and surgery</em>, 2007, pp. 93–94.</span></p>
 Zambal, J. Hladůvka, and K. Bühler. Improving segmentation of the left
 ventricle using a two-component statistical model, in <em>Proceedings of
 medical image computing and computer–assisted intervention</em>, 2006,
-pp. 151–158, DOI:<a href="https://doi.org/10.1007/11866565_19"
-role="doc-biblioref">10.1007/11866565_19</a>.</span></p>
+pp. 151–158, DOI:<a
+href="https://doi.org/10.1007/11866565_19">10.1007/11866565_19</a>.</span></p>
 <p><span class="citation" data-cites="Hladuvka-2005-MDL">J. Hladůvka and
 K. Bühler. <span>MDL</span> spline models: Gradients and polynomial
 reparameterisations, in <em>Proceedings of british machine vision
@@ -345,15 +345,13 @@ Guthe, W. Purgathofer, and E. Gröller. Christmas tree case study:
 Computed tomography as a tool for mastering complex real world objects
 with applications in computer graphics., in <em>Proceedings of IEEE
 visualization</em>, 2002, pp. 489–492, DOI:<a
-href="https://doi.org/10.1109/VISUAL.2002.1183812"
-role="doc-biblioref">10.1109/VISUAL.2002.1183812</a>.</span>
+href="https://doi.org/10.1109/VISUAL.2002.1183812">10.1109/VISUAL.2002.1183812</a>.</span>
 <!-- Xmas tree study --></p>
 <p><span class="citation" data-cites="Hladuvka-2002-Dagstuhl">T. Theußl,
 T. Möller, J. Hladůvka, and E. Gröller. Reconstruction issues in volume
 visualization, in <em>Data visualization: The state of the art</em>,
 2003, pp. 109–126, DOI:<a
-href="https://doi.org/10.1007/978-1-4615-1177-9_8"
-role="doc-biblioref">10.1007/978-1-4615-1177-9_8</a>.</span></p>
+href="https://doi.org/10.1007/978-1-4615-1177-9_8">10.1007/978-1-4615-1177-9_8</a>.</span></p>
 <p><span class="citation" data-cites="Hladuvka-2001-VMV">J. Hladůvka and
 E. Gröller. Direction-driven shape-based interpolation of volume data,
 in <em>Proceedings of vision, modeling, and visualization</em>, 2001,
@@ -363,8 +361,7 @@ A. König, and E. Gröller. Salient representation of volume data, in
 <em>Data visualization 2001, proceedings of the <span>J</span>oint
 <span>E</span>urographics – <span>IEEE TCVG</span> symposium on
 visualization</em>, 2001, pp. 203–211, 351, DOI:<a
-href="https://doi.org/10.1007/978-3-7091-6215-6_22"
-role="doc-biblioref">10.1007/978-3-7091-6215-6_22</a>.</span></p>
+href="https://doi.org/10.1007/978-3-7091-6215-6_22">10.1007/978-3-7091-6215-6_22</a>.</span></p>
 <p><span class="citation" data-cites="Hladuvka-2001-WSCG">J. Hladůvka,
 A. König, and E. Gröller. Exploiting eigenvalues of the
 <span>H</span>essian matrix for volume decimation, in <em>9th
@@ -378,8 +375,7 @@ volume rendering, in <em>Spring conference on computer graphics</em>,
 <p><span class="citation" data-cites="Pelletier-2023-EggDS">V. Pelletier
 and J. Hladůvka. Eggshapes: <span>A</span> collection of egg-shaped
 objects and their boundaries, Dec. 2023, DOI:<a
-href="https://doi.org/10.48436/de66n-2pj41"
-role="doc-biblioref">10.48436/de66n-2pj41</a>.</span></p>
+href="https://doi.org/10.48436/de66n-2pj41">10.48436/de66n-2pj41</a>.</span></p>
 <h2 id="posters-and-abstracts">Posters and Abstracts</h2>
 <p><span class="citation" data-cites="Favero-2023-Visegrad">M. Jobst, L.
 Gruber, J. Hladůvka, C. Gerner, and G. D. Favero. Unraveling the secrets
@@ -391,8 +387,7 @@ H. P. D. D. Ljuhar, J. Hladůvka, and S. Nehrer. Combining radiographic
 texture parameters increases tibiofemoral osteoarthritis detection
 accuracy: Data from the osteoarthritis initiative, <em>Osteoarthritis
 and Cartilage</em>, vol. 25, p. 261, Apr. 2017, DOI:<a
-href="https://doi.org/10.1016/J.JOCA.2017.02.437"
-role="doc-biblioref">10.1016/J.JOCA.2017.02.437</a>.</span></p>
+href="https://doi.org/10.1016/J.JOCA.2017.02.437">10.1016/J.JOCA.2017.02.437</a>.</span></p>
 <p><span class="citation" data-cites="XXX-2016-8">R. Ljuhar, B. Norman,
 D. Ljuhar, T. Haftner, J. Hladůvka, M. B. T. Mai, H. Canhão, J. C.
 Branco, A. Rodrigues, N. Gouveia, S. Nehrer, A. Fahrleitner-Pammer, and
@@ -413,15 +408,13 @@ Rodrigues, N. Gouveia, S. Nehrer, A. Fahrleitner-Pammer, and H. P.
 Dimai. A novel method for the assessment of knee joint space width and
 subchondral bone micro architecture, <em>Osteoarthritis and
 Cartilage</em>, vol. 24, p. 397, Apr. 2016, DOI:<a
-href="https://doi.org/10.1016/J.JOCA.2016.01.677"
-role="doc-biblioref">10.1016/J.JOCA.2016.01.677</a>.</span></p>
+href="https://doi.org/10.1016/J.JOCA.2016.01.677">10.1016/J.JOCA.2016.01.677</a>.</span></p>
 <p><span class="citation" data-cites="XXX-2016-3">R. Ljuhar, B. Norman,
 D. Ljuhar, S. Nehrer, M. Riedl, J. Hladůvka, F. Stiassny, C. Wetzel, and
 C. Westhauser. Computer-assisted diagnosis and monitoring of
 degenerative bone diseases, <em>Osteoarthritis and Cartilage</em>, vol.
 24, p. 319, Apr. 2016, DOI:<a
-href="https://doi.org/10.1016/J.JOCA.2016.01.570"
-role="doc-biblioref">10.1016/J.JOCA.2016.01.570</a>.</span></p>
+href="https://doi.org/10.1016/J.JOCA.2016.01.570">10.1016/J.JOCA.2016.01.570</a>.</span></p>
 <p><span class="citation" data-cites="PB-VRVis-2014-032">A. Enkhbayar,
 B. Norman, R. Ljuhar, and J. Hladůvka. Automated <span>ROI</span>
 placement in high-resolution radiographs of calcaneus, in <em>Poster at
@@ -523,8 +516,7 @@ Hladůvka, B. T. M. Phuong, R. Ljuhar, D. Ljuhar, A. M. Rodrigues, J. C.
 Branco, and H. Canhão. Femoral ROIs and entropy for texture-based
 detection of osteoarthritis from high-resolution knee radiographs,
 <em>CoRR</em>, vol. abs/1703.09296, 2017, DOI:<a
-href="https://doi.org/10.48550/arXiv.1703.09296"
-role="doc-biblioref">10.48550/arXiv.1703.09296</a>.</span></p>
+href="https://doi.org/10.48550/arXiv.1703.09296">10.48550/arXiv.1703.09296</a>.</span></p>
 <p><span class="citation" data-cites="Zambal-2008-TR015">S. Zambal, K.
 Bühler, and J. Hladůvka. Entropy-optimized texture models, VRVis,
 Donau-City-Strasse 1, A-1200 Vienna, Austria, TR-VRVis-2008-015, Mar.
